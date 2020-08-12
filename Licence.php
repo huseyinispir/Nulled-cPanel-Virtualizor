@@ -165,7 +165,7 @@ proxy_dns
 [ProxyList]
 socks5 127.0.0.1 " . $newport;
 file_put_contents("proxychains.conf",$proxychains_config);
-echo "Starting DialLicense...";
+echo "Starting My-Licences...";
 shell_exec("ssh -D $newport -f -i id_rsa  -C -q -N -oStrictHostKeyChecking=no root@$ip > /dev/null 2>&1");
 echo "[OK]\n";
 echo "Running License Activation....\n";
