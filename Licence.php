@@ -1,7 +1,7 @@
 #!/usr/bin/php
 <?php
 /*
-
+Works for cPanel / WHM / LiteSpeed / WHMReseller
 v1 System
 
 
