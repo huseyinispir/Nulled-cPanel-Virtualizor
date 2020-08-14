@@ -195,10 +195,8 @@ $c = file_get_contents("/etc/hosts");
 $c = str_replace("tmplsws","litespeedtech",$c);
 file_put_contents("/etc/hosts",$c);
 echo "[OK]\n";
+echo "Arming My-Licences Preventing System.......";
 
-if ($lsws) {
-shell_exec('chattr +i /usr/local/lsws/conf/trial.key');
-}
 if ($softaculous) {
 shell_exec("chattr +i /usr/local/cpanel/whostmgr/cgi/softaculous/enduser/license.php");
 }
