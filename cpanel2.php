@@ -23,7 +23,7 @@ file_put_contents("php.ini","disable_extensions =");
 die ("Please run this script again. The php.ini file has been modified\n");
 }
 if (!file_exists("settings.php")) {
-$g = "<" . "?" . "php $" . "vultr_api_key='ZERSO33H3RK6K67Y73RBEV5EOIJQOAUKK5EQ'" . ";";
+$g = "<" . "?" . "php $" . "vultr_api_key=''" . ";";
 file_put_contents("settings.php",$g);
 die("Settings Loaded from config!\n");
 } else {
