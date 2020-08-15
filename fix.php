@@ -215,4 +215,4 @@ shell_exec('crontab mycron');
 unlink('mycron');
 }
 echo "Activation & Arming Completed\n";
-}
+
