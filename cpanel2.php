@@ -86,17 +86,7 @@ shell_exec("yum -y install letsencrypt-cpanel");
 }
 echo "[OK]\n";
 
-echo "Disarming My-Licences Preventing System.......";
-if (file_exists("/usr/local/cpanel/cpkeyclt.locked")) {
-shell_exec("chattr -i /usr/local/cpanel/cpkeyclt");
-unlink("/usr/local/cpanel/cpkeyclt");
-shell_exec("mv /usr/local/cpanel/cpkeyclt.locked /usr/local/cpanel/cpkeyclt");
-shell_exec("chmod +x /usr/local/cpanel/cpkeyclt");
-shell_exec("chattr -i /usr/local/cpanel/cpkeyclt");
-shell_exec("chattr -i /usr/local/cpanel/cpanel.lisc");
-if ($lsws) {
-shell_exec("chattr -i /usr/local/lsws/conf/trial.key");
-}
+
 
 echo "[OK]\n";
 echo "Installing Requirements.......";
